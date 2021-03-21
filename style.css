@@ -1,0 +1,202 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #333;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.nom_chevalier {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.sous_titre {
+    position: absolute;
+    top: 33%;
+    left: 66%;
+    color: #f1f1f1;
+}
+
+.nom_chevalier li {
+    letter-spacing: 20px;
+    font-size: 70px;
+    color: #f1f1f1;
+    font-family: Kanit;
+    animation: flash 2s infinite;
+}
+
+.boutons {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+ul button {
+    width: 300px;
+    display: flex;
+    line-height: 30px;
+    font-family: Roboto;
+    box-shadow: 0px 20px 10px rgb(14, 4, 4);
+}
+.boutons a {
+    font-family: Kanit;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    margin: 0 auto;
+}
+
+
+@keyframes flash {
+    0% {
+        color: #484848;
+        text-shadow: none;
+    }
+
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #f8d536;
+        text-shadow: 0 0 7px #f8d536,
+    }
+}
+
+.nom_chevalier li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.nom_chevalier li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.nom_chevalier li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.nom_chevalier li:nth-child(4) {
+    animation-delay: 0.7s;
+}
+.nom_chevalier li:nth-child(5) {
+    animation-delay: 0.9s;
+}
+.nom_chevalier li:nth-child(6) {
+    animation-delay: 1.1s;
+}
+.nom_chevalier li:nth-child(7) {
+    animation-delay: 1.3s;
+}
+
+/* ------------- Presentation ---------------- */
+
+.titre_presentation {
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-family: Kanit; 
+}
+.presentation {
+    position: absolute;
+    top: 108%;
+    left: 42%;
+    color: #f1f1f1;
+    font-family: Roboto;
+}
+
+.presentation p {
+    padding: 3px 0px ;
+}
+
+/* --------------Les armes--------------- */
+
+.les_armes {
+    position: absolute;
+    top: 150%;
+    height: 400px;
+    width: 100%;
+    background: url(images/armurerie.jpg);
+    background-position: -300px -170px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.les_armes h2 {
+    position: absolute;
+    color:#f1f1f1;
+    margin-left: 550px;
+    margin-top: 200px;
+    font-size: 30px;
+    font-family: Roboto;
+}
+.armes_presentation {
+    top: 160%;
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.armes_presentation img {
+    width: 100px;
+    margin: 10px 55px ;
+}
+
+
+/* -----------Les conquêtes------------- */
+
+.les_conquetes {
+    position: absolute;
+    top: 290%;
+    background-image: url(images/intro.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: 0px 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.les_conquetes h2 {
+    color: #f1f1f1;
+    padding: 40px;
+    font-family: Kanit;
+}
+
+.les_conquetes p {
+    color: #f1f1f1;
+    padding: 10px;
+    font-family: Roboto;
+}
+
+
+/* ------------Pied de page----------- */
+
+.pied_page {
+    position: absolute;
+    top: 2200px;
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: Kanit;
+}
